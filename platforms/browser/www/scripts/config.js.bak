@@ -1,0 +1,72 @@
+//LOGIN APP
+angular.module('loginapp',['ngRoute', 'ngResource', 'ngCookies']);
+angular.module('loginapp').constant('HOME', '/~ndaneri/mvss/mvssweb/views/');
+
+
+// RESOURCE FOR API REST
+angular.module('loginapp').config(['$resourceProvider', function($resourceProvider) {
+  // Don't strip trailing slashes from calculated URLs
+  $resourceProvider.defaults.stripTrailingSlashes = false;
+}]);
+
+angular.module('loginapp').config(['$routeProvider', '$locationProvider',
+  function($routeProvider, $locationProvider) {
+    $routeProvider.
+      when('/cambiar-clave', {
+        templateUrl: 'views/cambiar-clave.html',
+        controller: 'cambioClaveCtrl'
+      })./*
+      when('/registrar', {
+        templateUrl: 'views/registrar.html',
+        controller: 'registrationCtrl'
+      }).*/
+      otherwise({
+        templateUrl: 'views/login.html'
+    });
+
+}]);
+
+//MAIN APP
+angular.module('mainapp',['ngRoute', 'ngResource', 'ngCookies']);
+angular.module('mainapp').constant('HOME', '/~ndaneri/mvss/mvssweb/views/');
+angular.module('mainapp').constant('LOGIN', '/~ndaneri/mvss/mvssweb/');
+
+
+// RESOURCE FOR API REST
+angular.module('mainapp').config(['$resourceProvider', function($resourceProvider) {
+  // Don't strip trailing slashes from calculated URLs
+  $resourceProvider.defaults.stripTrailingSlashes = false;
+}]);
+
+angular.module('mainapp').config(['$routeProvider', '$locationProvider',
+  function($routeProvider, $locationProvider) {
+    $routeProvider.
+      when('/usuarios', {
+        templateUrl: 'usuarios.html',
+        controller: 'usersCtrl'
+      }).
+      when('/usuario-editar/:userId', {
+        templateUrl: 'usuario-editar.html',
+        controller: 'userEditCtrl'
+      }).
+      when('/usuario-nuevo', {
+        templateUrl: 'usuario-nuevo.html',
+        controller: 'userNewCtrl'
+      }).
+      when('/perfiles', {
+        templateUrl: 'perfiles.html',
+        controller: 'profilesCtrl'
+      }).
+      when('/perfil-nuevo', {
+        templateUrl: 'perfil-nuevo.html',
+        controller: 'profileNewCtrl'
+      }).
+      when('/perfil-editar/:profileId', {
+        templateUrl: 'perfil-editar.html',
+        controller: 'profileEditCtrl'
+      }).
+      otherwise({
+        templateUrl: 'home.html'
+    });
+
+}]);

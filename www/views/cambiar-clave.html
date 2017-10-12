@@ -1,0 +1,43 @@
+   <div class="nav">
+      <div class="container">
+          <div class="col-md-2"><div class="logo"></div></div>
+          <div class="col-md-10">
+              
+          </div>
+      </div>
+  </div>
+
+
+<div class="container">
+  <div class="row">
+   <!-- <h3 class="text-center"> <img src="img/ely-logo-blanco.png" alt="ely" style="height: 200px;"></h3> -->
+   <!-- <h3 class="text-center" style="color:#fff">Cambiar Clave de Acceso </h3> -->
+    <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-4 loginBox"  style="padding: 20px">
+    <h4 class="text-center" style="color:#000;margin-top: 0px;font-weight: bold;">Cambiar Clave de Acceso </h4>
+      <form>
+        <div class="text-right" style="margin-bottom: 5px;font-size: 10px;color: red;">
+          <span> * obligatorios</span>
+        </div>
+        <!-- <div class="form-group">
+          <label for="actualPassword">Clave Actual <span style="color:red">*</span></label>
+          <input type="password" class="form-control" id="actualPassword" placeholder="Ingrese Clave Actual" ng-model="pass.actualPassword">
+        </div> -->
+        <div class="form-group">
+          <label for="newPassword" style="color:#000">Clave Nueva <span style="color:red">*</span></label>
+          <input type="password" class="form-control" id="newPassword" placeholder="Ingrese Clave Nueva" ng-model="pass.newPassword">
+        </div>
+        <div class="form-group">
+          <label for="newPassword2" style="color:#000">Reingrese Clave Nueva <span style="color:red">*</span></label>
+          <input type="password" class="form-control" id="newPassword2" placeholder="Reingrese Clave Nueva" ng-model="pass.newPassword2">
+        </div>
+        <button type="button" class="btn btn-block btn-primary" ng-click="btnChange()" ng-show="!showLoading">Cambiar</button>
+      </form>
+      <div ng-show="showLoading" class="text-center" style="padding: 15px;">
+          <img src="img/ajax-loader.gif" alt="globemind software">
+      </div>
+      <div class="alert alert-danger" role="alert" ng-show="messege.show" style="margin-top: 25px;" ng-cloak>
+      {{messege.text}}
+      </div>      
+    </div>
+  </div>
+</div>
