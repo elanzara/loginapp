@@ -1,6 +1,6 @@
 //LOGIN APP
 angular.module('loginapp',['ngRoute', 'ngResource', 'ngCookies']);
-angular.module('loginapp').constant('HOME', '/mvss/mvssweb/views/');
+angular.module('loginapp').constant('HOME', '/views/');
 
 
 // RESOURCE FOR API REST
@@ -28,8 +28,8 @@ angular.module('loginapp').config(['$routeProvider', '$locationProvider',
 
 //MAIN APP
 angular.module('mainapp',['ngRoute', 'ngResource', 'ngCookies', 'ui.bootstrap']);
-angular.module('mainapp').constant('HOME', '/mvss/mvssweb/views/');
-angular.module('mainapp').constant('LOGIN', '/mvss/mvssweb/');
+angular.module('mainapp').constant('HOME', '/views/');
+angular.module('mainapp').constant('LOGIN', '/mvssweb/');
 
 
 // RESOURCE FOR API REST

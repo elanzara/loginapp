@@ -1,7 +1,7 @@
 function UserService($http, $location, $cookies) {
 
 	var userResponse = {};
-	var apiUrl = 'http://'+$location.host()+'/mvss/mvssapi/v1/users/';
+	var apiUrl = 'http://192.168.0.30/mvss/mvssapi/v1/users/';/*'http://'+$location.host()+*/
 	var config = {
 		headers:  {'Authorization': $cookies.getObject('token'), 'SID': $cookies.getObject('uid')}
 	};
@@ -29,8 +29,8 @@ function UserService($http, $location, $cookies) {
 	};
 
 	userResponse.getUserActivation = function (model) {
-		return $http.post('http://www.ely.com.ar/ely-api/sendMail.php', model);
-		// return $http.post(apiUrl+'validateMail/', model);
+		//return $http.post('http://www.ely.com.ar/ely-api/sendMail.php', model);
+		 return $http.post(apiUrl+'validateMail/', model);
 	};
 
 	userResponse.getUsers = function () {

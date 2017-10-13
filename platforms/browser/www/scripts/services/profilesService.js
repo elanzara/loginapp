@@ -1,7 +1,7 @@
 function ProfilesService($http, $location, $cookies) {
 
 	var profileResponse = {};
-	var apiUrl = 'http://'+$location.host()+'/mvss/mvssapi/v1/profiles/';
+	var apiUrl = 'http://192.168.0.30/mvss/mvssapi/v1/profiles/'; /*'http://'+$location.host()+*/
 	var config = {
 		headers:  {'Authorization': $cookies.getObject('token'), 'SID': $cookies.getObject('uid')}
 	};
