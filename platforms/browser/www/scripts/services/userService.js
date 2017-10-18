@@ -8,6 +8,7 @@ function UserService($http, $location, $cookies) {
 	};
 	
 	userResponse.setAuth = function (user) {
+		alert (apiUrl+'Auth/');
 		return $http.post(apiUrl+'Auth/', user);
 	};
 
