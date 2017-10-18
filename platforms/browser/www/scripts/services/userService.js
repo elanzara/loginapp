@@ -1,8 +1,8 @@
 function UserService($http, $location, $cookies) {
 
 	var userResponse = {};
-	var apiUrl = 'http://192.168.1.47/mvss/mvssapi/v1/users/';/*'http://'+$location.host()+*/
-	//  var apiUrl = 'http://m4000521.ferozo.com/mvssapi/v1/users/';/*'http://'+$location.host()+*/
+	var apiUrl = 'http://192.168.56.1/mvss/mvssapi/v1/users/';/*'http://'+$location.host()+*/
+	//   var apiUrl = 'http://m4000521.ferozo.com/mvssapi/v1/users/';/*'http://'+$location.host()+*/
 	var config = {
 		headers:  {'Authorization': $cookies.getObject('token'), 'SID': $cookies.getObject('uid')}
 	};
