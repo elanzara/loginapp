@@ -1,0 +1,47 @@
+  <div class="container">
+    <div class="col-md-12">
+    	<div class="col-md-12" style="padding: 5px;margin-top: 10px;text-align: right;">
+    		<a href="" style="font-size: smaller;font-weight: normal;" ng-click="btnBack()"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"> </span> Volver</a></li>
+    	</div>
+    	<!-- HEADER -->
+    	<div class="col-md-12" style="padding: 0;">
+    		<div class="col-md-6">
+    			<h2>Editar Perfiles de Usuarios</h2>	
+    		</div> 
+    		<div class="col-md-6 text-right" style="line-height: 74px;">
+    			<span style="color:red">* Obligatorios</span>
+    		</div>     	
+    	</div>    
+
+    	<!-- CONTENT -->
+    	<div class="col-md-12" style="padding: 0;">
+    		<div class="panel panel-default">
+		  		<div class="panel-body">
+		  			<div class="col-md-12">
+		  				<div class="col-md-3">
+		  					<div class="form-group">
+							    <label for="code">Codigo <span style="color:red">*</span></label>
+							    <input type="text" class="form-control" id="code" placeholder="Codigo Perfil" ng-model="newModel.code">
+							  </div>
+		  				</div>	
+		  				<div class="col-md-4">
+		  					<div class="form-group">
+							    <label for="desc">Descripcion <span style="color:red">*</span></label>
+							    <input type="text" class="form-control" id="desc" placeholder="Descripcion Perfil" ng-model="newModel.description">
+							  </div>
+		  				</div>	
+		  				<div class="col-md-4" style="line-height: 74px;">
+		  					<button class="btn btn-primary" type="button" ng-click="btnSave()">
+			    				<span class="glyphicon glyphicon-floppy-save" aria-hidden="true"> </span> Guardar
+			    			</button>
+		  				</div>	
+		  			</div>
+				</div>
+			</div>
+			<div class="alert alert-danger" role="alert" ng-show="showMandatory">Debe cargar los campos indicados como  <strong>* Obligatorios</strong>.</div>
+    	</div>
+
+    </div>
+  </div>
+
+

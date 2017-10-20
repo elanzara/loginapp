@@ -1,0 +1,32 @@
+ <div class="nav">
+      <div class="container">
+          <div class="col-md-2"><div class="logo"></div></div>
+          <div class="col-md-10">
+              
+          </div>
+      </div>
+  </div>
+
+
+<div class="container">
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-4 loginBox">
+        <!-- <header class="text-center" >Ingrese al Sistema</header> -->
+        <form ng-submit="btnLogin()">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Usuario</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Usuario" ng-model="user.userName">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Clave</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Clave" ng-model="user.userPassword">
+          </div>
+          <button type="submit" class="btn btn-block btn-primary">Ingresar</button>
+        </form>
+        <div ng-show="showLoading" class="text-center" style="padding: 15px;">
+          <img src="img/ajax-loader.gif" alt="globemind software">
+        </div>
+        <div class="alert alert-danger" role="alert" ng-show="showMessage" style="margin-top: 50px;" ng-cloak><strong>Error.</strong> {{showMessageTxt}}</div>      
+      </div>
+    </div>
+  </div>
