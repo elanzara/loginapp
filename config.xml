@@ -16,4 +16,5 @@
         <allow-navigation href="*" />
     </platform>
     <engine name="android" spec="^6.2.3" />
+    <gap:plugin name=”cordova-plugin-whitelist” source=”npm” />
 </widget>
