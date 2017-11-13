@@ -1,7 +1,7 @@
 function UserService($http, $location, $cookies) {
 
 	var userResponse = {};
-	var apiUrl = 'http://localhost/mvss/mvssapi/v1/users/';/*'http://'+$location.host()+*/
+	var apiUrl = 'http://192.168.90.2/mvss/mvssapi/v1/users/';/*'http://'+$location.host()+*/
 	//var apiUrl = 'http://10.60.42.57/mvss/mvssapi/v1/users/';/*'http://'+$location.host()+*/
 	//   var apiUrl = 'http://m4000521.ferozo.com/mvssapi/v1/users/';/*'http://'+$location.host()+*/
 	var config = {
