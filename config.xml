@@ -16,5 +16,5 @@
         <allow-navigation href="*" />
     </platform>
     <engine name="android" spec="^6.2.3" />
-    <plugin name="cordova-plugin-whitelist"      source="npm" spec="1.0.0" />
+    <plugin name="cordova-plugin-whitelist" spec="1.0.0" />
 </widget>

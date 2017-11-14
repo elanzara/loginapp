@@ -1,6 +1,7 @@
 //LOGIN APP
 angular.module('loginapp',['ngRoute', 'ngResource', 'ngCookies']);
-angular.module('loginapp').constant('HOME', '/views/');
+//angular.module('loginapp').constant('HOME', '/loginapp/views/');
+angular.module('loginapp').constant('HOME', 'file:///assets/www/views/');
 
 
 // RESOURCE FOR API REST

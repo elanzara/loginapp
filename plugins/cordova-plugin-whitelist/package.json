@@ -1,0 +1,95 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "cordova-plugin-whitelist@1.0.0",
+        "scope": null,
+        "escapedName": "cordova-plugin-whitelist",
+        "name": "cordova-plugin-whitelist",
+        "rawSpec": "1.0.0",
+        "spec": "1.0.0",
+        "type": "version"
+      },
+      "D:\\Desa_Globemind\\phonegap\\login\\login\\loginapp\\node_modules"
+    ]
+  ],
+  "_from": "cordova-plugin-whitelist@1.0.0",
+  "_id": "cordova-plugin-whitelist@1.0.0",
+  "_inCache": true,
+  "_location": "/cordova-plugin-whitelist",
+  "_nodeVersion": "0.10.36",
+  "_npmUser": {
+    "name": "stevegill",
+    "email": "stevengill97@gmail.com"
+  },
+  "_npmVersion": "2.7.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "cordova-plugin-whitelist@1.0.0",
+    "scope": null,
+    "escapedName": "cordova-plugin-whitelist",
+    "name": "cordova-plugin-whitelist",
+    "rawSpec": "1.0.0",
+    "spec": "1.0.0",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-whitelist/-/cordova-plugin-whitelist-1.0.0.tgz",
+  "_shasum": "8eec4cf445da4d45c4fa0fdc23949b24d39b6b31",
+  "_shrinkwrap": null,
+  "_spec": "cordova-plugin-whitelist@1.0.0",
+  "_where": "D:\\Desa_Globemind\\phonegap\\login\\login\\loginapp\\node_modules",
+  "author": {
+    "name": "Apache Software Foundation"
+  },
+  "cordova": {
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "dependencies": {},
+  "description": "Cordova Whitelist Plugin",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "8eec4cf445da4d45c4fa0fdc23949b24d39b6b31",
+    "tarball": "https://registry.npmjs.org/cordova-plugin-whitelist/-/cordova-plugin-whitelist-1.0.0.tgz"
+  },
+  "engines": [
+    {
+      "name": "cordova-android",
+      "version": ">=4.0.0-dev"
+    },
+    {
+      "name": "cordova-ios",
+      "version": ">=4.0.0-dev"
+    }
+  ],
+  "keywords": [
+    "cordova",
+    "whitelist",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "license": "Apache 2.0",
+  "maintainers": [
+    {
+      "name": "stevegill",
+      "email": "stevengill97@gmail.com"
+    }
+  ],
+  "name": "cordova-plugin-whitelist",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "https://git-wip-us.apache.org/repos/asf/cordova-plugin-whitelist.git"
+  },
+  "scripts": {},
+  "version": "1.0.0"
+}
