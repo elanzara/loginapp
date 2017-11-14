@@ -3,7 +3,7 @@ angular.module('loginapp',['ngRoute', 'ngResource', 'ngCookies']);
 //angular.module('loginapp').constant('HOME', './views/');
 //angular.module('loginapp').constant('HOME', '/assets/www/views/home.html');
 //angular.module('loginapp').constant('HOME', '/assets/www/views/index.html');
-angular.module('loginapp').constant('HOME', 'index.html');
+angular.module('loginapp').constant('HOME', 'index_new.html');
 
 
 // RESOURCE FOR API REST
