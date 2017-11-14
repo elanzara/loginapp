@@ -36,7 +36,7 @@ angular.module('loginapp').config(['$routeProvider', '$locationProvider',
 
 //MAIN APP
 angular.module('mainapp',['ngRoute', 'ngResource', 'ngCookies', 'ui.bootstrap']);
-angular.module('mainapp').constant('HOME', '/assets/www/views/);
+angular.module('mainapp').constant('HOME', '/views/);
 angular.module('mainapp').constant('LOGIN', '/mvssweb/');
 
 
