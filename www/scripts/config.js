@@ -3,7 +3,7 @@ angular.module('loginapp',['ngRoute', 'ngResource', 'ngCookies']);
 //angular.module('loginapp').constant('HOME', './views/');
 //angular.module('loginapp').constant('HOME', '/assets/www/views/home.html');
 //angular.module('loginapp').constant('HOME', '/assets/www/views/index.html');
-angular.module('loginapp').constant('HOME', './assets/www/views/');
+angular.module('loginapp').constant('HOME', '/views/');
 
 
 // RESOURCE FOR API REST
@@ -18,7 +18,12 @@ angular.module('loginapp').config(['$routeProvider', '$locationProvider',
       when('/cambiar-clave', {
         templateUrl: 'views/cambiar-clave.html',
         controller: 'cambioClaveCtrl'
-      })./*
+      }).
+      when('/inicio', {
+        templateUrl: 'views/index.html'/*,
+        controller: 'cambioClaveCtrl'*/
+      }).
+      /*
       when('/registrar', {
         templateUrl: 'views/registrar.html',
         controller: 'registrationCtrl'
