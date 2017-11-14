@@ -23,7 +23,7 @@ function LoginCtrl ($scope, $window, $cookies, $location, UserService, HOME) {
 					$cookies.putObject('name', response.user.user, {'expires': expireDate});
 					$cookies.putObject('idp', response.user.idprofiles, {'expires': expireDate});
 					if(response.user.firstlogin != 0){
-						/*$window.location.href = HOME;*/
+						//$window.location.href = HOME;
 						$location.path('/inicio');
 					}else{
 						$location.path('/cambiar-clave');

@@ -20,8 +20,7 @@ angular.module('loginapp').config(['$routeProvider', '$locationProvider',
         controller: 'cambioClaveCtrl'
       }).
       when('/inicio', {
-        templateUrl: 'views/index.html'/*,
-        controller: 'cambioClaveCtrl'*/
+        templateUrl: 'views/index.html'
       }).
       /*
       when('/registrar', {
@@ -36,9 +35,8 @@ angular.module('loginapp').config(['$routeProvider', '$locationProvider',
 
 //MAIN APP
 angular.module('mainapp',['ngRoute', 'ngResource', 'ngCookies', 'ui.bootstrap']);
-angular.module('mainapp').constant('HOME', '/views/);
 angular.module('mainapp').constant('LOGIN', '/mvssweb/');
-
+angular.module('mainapp').constant('HOME', '/views/');
 
 // RESOURCE FOR API REST
 angular.module('mainapp').config(['$resourceProvider', function($resourceProvider) {
