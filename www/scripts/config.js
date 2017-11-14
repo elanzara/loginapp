@@ -19,9 +19,9 @@ angular.module('loginapp').config(['$routeProvider', '$locationProvider',
         templateUrl: 'views/cambiar-clave.html',
         controller: 'cambioClaveCtrl'
       }).
-      when('/inicio', {
-        templateUrl: 'views/index.html'
-      }).
+      // when('/inicio', {
+      //   templateUrl: 'views/index.html'
+      // }).
       /*
       when('/registrar', {
         templateUrl: 'views/registrar.html',
